@@ -1,0 +1,13 @@
+.redButtons {
+  background-color: red;
+  /* You may also want to add more styles like no border, padding, etc. */
+  border: none;
+  color: white; /* Ensuring text color is visible */
+  padding: 8px 16px; /* Adjust as needed */
+  font-size: 16px; /* Adjust as needed */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.redButtons:hover {
+  background-color: darkred; /* Optional: Change color on hover */
+}

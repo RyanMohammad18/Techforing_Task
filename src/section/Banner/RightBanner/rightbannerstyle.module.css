@@ -1,0 +1,13 @@
+.maincontainer{
+
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    position: relative;
+    display: inline-block;
+}
+.imagecontainer img{
+    border-radius: 50%;
+border: 35px solid #E2E8F0;
+}
