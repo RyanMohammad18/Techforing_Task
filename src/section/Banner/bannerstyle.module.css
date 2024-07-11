@@ -1,5 +1,36 @@
-.bannerContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bannerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 0 0;
+  overflow: hidden;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.leftBannerContent {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.rightBannerContent {
+  animation: slideInFromRight 1s ease-in-out forwards;
 }

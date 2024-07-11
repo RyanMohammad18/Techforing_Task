@@ -1,19 +1,21 @@
 .overlayContainer {
-  position: absolute;
-  top: 0; /* Adjust this value as needed to position the text above the image */
-  left: 50%;
-  transform: translateX(-50%);
+
+
   z-index: 1;
-  background-color: white; /* Ensure the background color for visibility */
+  background-color: transparent; 
   padding: 0.5rem;
 }
 
 .overlayContainer:hover .textBox,
-.overlayContainer:hover .line,
-.overlayContainer:hover .circle {
-  background-color: orange;
+
+.overlayContainer:hover .circle,
+.overlayContainer:hover .innerCircle {
+
   border-color: orange;
-  color: white; /* Optional: Change text color to white when hovered */
+  color: orange; 
+}
+.overlayContainer:hover .line{
+  background-color: orange;
 }
 
 .textBox {
@@ -27,13 +29,51 @@
   width: 4.5rem;
   height: 5px;
   background-color: black;
-
 }
 
 .circle {
-  width: 20px;
-  height: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+
+.innerCircle {
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background-color: white;
   border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rotatetextbox{
+  transform: rotate(180deg);
+}
+.overlayContainer {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.popIn {
+  opacity: 1;
+}
+ 
+
+@media (min-width: 400px) and (max-width: 1350px) {
+  .textBox {
+    padding: 0.5rem;
+  }
+
+  .line {
+    width: 3rem;
+    height: 5px;
+    background-color: black;
+  }
+
 }

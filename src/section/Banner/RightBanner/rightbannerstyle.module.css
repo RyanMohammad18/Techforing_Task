@@ -1,13 +1,43 @@
-.maincontainer{
+.maincontainer {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  position: relative;
+  display: inline-block;
+}
 
-    width: 100%;
+.imagecontainer img {
+  border-radius: 50%;
+  border: 35px solid #e2e8f0;
+  margin: 0 0 0 5rem;
+}
+.leftoverlay {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0%;
+}
+.rightoverlay {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+@media (min-width: 400px) and (max-width: 998px) {
+  .imagecontainer {
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
-    position: relative;
-    display: inline-block;
+  }
+  .rightoverlay {
+    top: 7%;
+    left: 50%;
+  }
 }
-.imagecontainer img{
-    border-radius: 50%;
-border: 35px solid #E2E8F0;
+@media (min-width: 1000px) and (max-width: 1350px) {
+  .rightoverlay {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+  }
 }
