@@ -4,10 +4,10 @@
 
 To run this project we have to :
 <br/>
--- clone the github
--- npm init
--- npm install @mui/material @emotion/react @emotion/styled (optional)
--- npm run dev
+-- clone the github<br/>
+-- npm init<br/>
+-- npm install @mui/material @emotion/react @emotion/styled (optional)<br/>
+-- npm run dev<br/>
 
 #Stack
 
